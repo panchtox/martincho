@@ -1,0 +1,36 @@
+<html>
+<head>
+<title>Pagina de prueba</title>
+<style type="text/css">
+h1{
+	color:red;
+}
+
+p{
+	color: blue;
+}
+
+#p2{
+	color:green;
+}
+</style>
+<script type="text/javascript">
+function ejecucion(){
+var n1=document.getElementById('i1').value;
+var n2=document.getElementById('i2').value;
+document.getElementById('p1').innerHTML=n1*n2;
+}
+</script>
+<head/>
+<body>
+<h1>Esta es una pagina de prueba para Martin</h1>
+<p id='p1'>Vamos a escribir un poco de html con los tags basicos para que Mart&iacute;n salga andando</p>
+<p id='p2'>Vamos a escribir un poco de html con los tags basicos para que Martin salga andando</p>
+<div>
+<p>Esto es otra prueba</p>
+</div>
+<input id='i1' type='text'/>
+<input id='i2' type='text'/>
+<input type='submit' value='ejecutar' onclick='ejecucion()'/>
+</body>
+</html>
