@@ -1,0 +1,115 @@
+<html>
+<head>
+	<meta charset="UTF-8" />
+	<title>Prueba</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+	<script type="text/javascript">	
+
+	function ejecucion(){
+		var diaj=document.getElementById("dia");
+		var mesj=document.getElementById("mes");
+		var añoj=document.getElementById("año");
+		document.getElementById("p1").innerHTML=diaj+mesj+añoj;
+	}
+	</script>
+	<style type="text/css">
+	body{
+		font-size: 25px;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-senif;
+	}
+	nav{
+		width: 300px;
+		margin: 5% auto;
+		background: #EEE;
+	}
+	nav li{
+		list-style: none;
+		position: relative;
+	}
+	nav li a{
+		color: #666;
+		text-decoration: none;
+		padding: 5px;
+		display: block;
+	}
+	nav li.parent:hover{
+		border: 1px #ccc solid;
+		margin: -1px;
+		background: #f8f8f8;
+	}
+	nav li li a{
+		width: 250px
+		display:block;
+	}
+	nav li ul{
+		width: 250px;
+		margin: 0;
+		display: none;
+		background: #f8f8f8;
+		border: 1px #ccc solid;
+		position: absolute;
+		left: 100%
+		top:1px;
+	}
+	nav li hover ul{
+		display: block;
+	}
+	nav li lu {
+		width: 0;
+		margin: 0;
+		background: #f8f8f8;
+		border: 1px #ccc solid;
+		position: absolute;
+		left: 100%;
+		top: -1px;
+		overflow: hidden;
+		z-index: -1px;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		-webkit-transition: opacity 0.2s ease-in 0.3s, width 0.4s ease-in 0.3s;
+		transition: opacity 0.2s ease-in  0.3s, width 0.4s ease-in 0.3s;
+		-moz-transition: opacity 0.2s ease-in  0.3s, width 0.4s ease-in 0.3s;
+		-moz-transition: opacity 0.2s ease-in  0.3s, width 0.4s ease-in 0.3s;
+	}
+	nav li:hover ul{
+		width: 250px;
+		opacity: 1;
+		filter: alpha(opacity=100);
+		-webkit-transition: opacity 0.1s linear 0s, width 0.3s ease-out 0s;
+		transition: opacity 0.1s linear 0s, width 0.3s ease-out 0s;
+		-moz-transition: opacity 0.1s linear 0s, width 0.3s ease-out 0s; 
+		-o-transition: oopacity 0.1s linear 0s, width 0.3s ease-out 0s;
+	}
+	</style>
+	<nav>
+		<li class="parent"><a href="#">Cristalab</a>
+		<ul>
+			<li><a href="pruebita.html">pruebita</a></li>
+			<li><a href="http://www.facebook.com">facebook</a></li>
+			<li><a href="#"></a>blog</li>
+		</ul>
+	</li>
+	<li><a href="#">mejorando.la</a></li>
+	<li><a href="#">L4C</a></li>
+	<li class="parent"><a href="#">Mas de Menu</a>
+		<ul>		
+			<li><a href="#">publicar</a></li>
+			<li><a href="#">ayuda</a></li>
+		</ul>
+	</li>
+	</nav>
+	<article>
+		<p>ingrese d&iacute;:</p><input id="dia">
+		<p>ingrese mes:</p><input id="mes">
+		<p>ingrese a&ntilde;o:</p><input id="año"><br>
+		<input type="submit" id="d" onclick="ejecucion()" />
+		<p>su edad es:</p><br>
+		<p ="p1">s</p>
+	</article>
+</body>
+</html>

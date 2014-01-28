@@ -1,0 +1,27 @@
+<html>
+<head>
+	<title>Do/while...</title>
+</head>
+<body>
+	<script type="text/javascript">
+	var valor;
+	do{
+		valor=prompt("ingrese valor:","");
+		valor=parseInt(valor);
+		document.write("el valor "+valor+" tiene ");
+		if (valor<10){
+			document.write("tiene 1 digito.");
+		}
+		else{
+			if (valor<100){
+			document.write("tiene 2 digitos.");
+		}
+		else{
+			document.write("tiene 3 digitos.");
+		}
+		}
+		document.write('<br>');
+	}while(valor!=0);
+	</script>
+</body>
+</html>

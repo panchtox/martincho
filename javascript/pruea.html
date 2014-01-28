@@ -1,0 +1,42 @@
+<html>
+<head>
+	<title>Inicio</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function meses (x) {
+			switch (x){
+				case 0: return "enero";
+				break;
+				case 1: return "febrero";
+				break;
+				case 2: return "marzo";
+				break;
+				case 3: return "abril";
+				break;
+				case 4: return "mayo";
+				break;
+				case 5: return "junio";
+				break;
+				case 6: return "julio";
+				break;
+				case 7: return "agosto";
+				break;
+				case 8: return "septiembre";
+				break;
+				case 9: return "octubre";
+				break;
+				case 10: return "noviembre";
+				break;
+				case 10: return "diciembre";
+				break;
+			}
+		}
+		var valor;
+		valor=prompt("ingrese 1:", "");
+		valor=parseInt(valor);
+		var r;
+		r=meses (valor);
+		document.write(r);
+	</script>
+</body>

@@ -8,10 +8,11 @@ h1{
 
 p{
 	color: blue;
+	font-family: comic sans MS;
 }
 
 #p2{
-	color:green;
+	color:blue;
 }
 </style>
 <script type="text/javascript">
@@ -21,16 +22,21 @@ var n2=document.getElementById('i2').value;
 document.getElementById('p1').innerHTML=n1*n2;
 }
 </script>
+<nav>
+	<ul>
+		<li><a href="pagina2.html">pagina2</a></li>
+	</ul>
+</nav>
 <head/>
-<body>
-<h1>Esta es una pagina de prueba para Martin</h1>
-<p id='p1'>Vamos a escribir un poco de html con los tags basicos para que Mart&iacute;n salga andando</p>
+<body bgcolor="#33cc00" onload="simpleCanvas();">
+<h1><strong>Esta es una pagina</strong> de prueba para <em>Martin</em></h1>
+<p id='p3'>La suma de las variables es:</p><p id="p1"></p>
 <p id='p2'>Vamos a escribir un poco de html con los tags basicos para que Martin salga andando</p>
 <div>
 <p>Esto es otra prueba</p>
 </div>
 <input id='i1' type='text'/>
 <input id='i2' type='text'/>
-<input type='submit' value='ejecutar' onclick='ejecucion()'/>
+<input type='submit' value='suma' onclick='ejecucion()'/>
 </body>
 </html>
